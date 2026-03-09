@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background-color: lightgreen;
+}
+#nome-titulo{
+    text-align: center;
+    color: rgb(145, 255, 42);
+    background-color: rgb(21, 172, 21);
+    margin: 10px;
+    border: 5px;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.projeto{
+    background-color: rgb(197, 224, 200);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block
+    
+}
+.projeto:hover{
+    background-color: rgb(0, 255, 34);
+}
+.h-list-item:nth-child(odd){
+    color: purple;
+}
+.h-list-item {
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+#sobre-p1::first-letter{
+    color: purple;
+    font-size: 25px;
+    
+}
+#sobre-p1{
+    margin-bottom: 7px;
+}
+#habilidades{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#contato{
+    background-color: rgb(42, 165, 97);
+    display: block;
+    padding: 25px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+}
