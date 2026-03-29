@@ -1,0 +1,3 @@
+flex-grow: define o quanto um item pode crescer caso necessário
+
+flex-shrink: define o quanto um item pode encolher caso necessário

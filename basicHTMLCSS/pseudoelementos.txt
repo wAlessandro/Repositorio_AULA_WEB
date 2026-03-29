@@ -1,0 +1,15 @@
+Estilizam partes específicas de um elemeto.
+
+p::first-letter -> estiliza a primeira letra do elemento.
+
+p::firt-line -> estiliza a primeira linha do elemento.
+
+h1::before -> insere um conteúdo no início do elemento
+h1::before{
+            content: 'primeira palavra';
+        }
+
+h1::after -> insere um conteúdo no final do elemento     
+h1::after{
+            content: 'última palavra';
+        }

@@ -1,0 +1,10 @@
+itens herdáveis: color, font-family, visibily
+
+força a herança de itens não herdáveis
+div{
+    margin: 100px;
+}
+
+h1{
+    margin: inherit
+}

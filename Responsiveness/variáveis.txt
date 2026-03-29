@@ -1,0 +1,12 @@
+declaração:
+:root {
+     --cor-primaria: #3498db;
+      --fonte-padrao: 'Arial', sans-serif;
+       --espacamento: 16px; 
+}
+
+utilização:
+h1 { 
+color: var(--cor-primaria);          <---V
+font-size: var(--tamanho-fonte-base); 
+}

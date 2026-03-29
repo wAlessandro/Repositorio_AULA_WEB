@@ -1,0 +1,26 @@
+* -> seleciona todos os elementos.
+
+div p -> seleciona somente as tags (p) filhas dentro da div.
+<div>
+    <p></p>        <---V
+</div>
+
+div > p -> seleciona somente as tags (p) filhas diretas da div.
+<div>
+    <p></p>        <---V
+    
+    <div>
+        <p></p>    <---X
+    </div>
+</div>
+
+h + p -> seleciona o primeiro elemento que vem logo após o especificado.
+<h>
+<p>      <---V
+<p>      <---X
+
+h ~ p -> seleciona todos os elesmentos do mesmo nível que vêm após o especificado.
+<h>
+<p>      <---V
+<p>      <---V
+
