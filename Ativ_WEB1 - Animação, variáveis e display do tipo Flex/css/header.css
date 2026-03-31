@@ -1,0 +1,44 @@
+.main-bar{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+.header-button{
+    padding:10px;
+    font-size: 20px;
+    background-color: rgb(160, 243, 36)
+}
+#header-menu-button{
+    justify-self: flex-start;
+    width: 25px;
+    text-align: center;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#header-theme-button{
+    background-color: rgb(255, 208, 0);
+    width: 25px;
+    justify-self: flex-end;
+    text-align: center;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+#theme-button:checked ~ body{
+    background-color: black;
+
+}
+.header-items{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;  
+}
+#header-title{
+    justify-self: flex-end;
+
+}

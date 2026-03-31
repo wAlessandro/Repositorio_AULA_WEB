@@ -1,0 +1,25 @@
+.menu{
+    background-color: rgb(136, 34, 34);
+    width: 40vh;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    
+    transition: clip-path 0.3s ease;
+    clip-path: inset(0 0 100% 0);
+    position: fixed;
+}
+
+.menu:target{
+    clip-path: inset(0 0 0% 0);
+}
+
+.menu-item{
+    background-color: rgb(136, 34, 34);
+}
+.menu-item:hover{
+    background-color: rgb(219, 56, 56);
+}
+#exit-button{
+    color: rgb(255, 0, 0);
+}
