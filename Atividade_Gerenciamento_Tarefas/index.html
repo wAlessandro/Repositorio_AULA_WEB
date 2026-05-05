@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-4">
+    <h1 class="mb-4">Gerenciador de Tarefas</h1>
+
+    <div class="input-group mb-3">
+        <input type="text" id="t-input" class="form-control" placeholder="Digite uma tarefa">
+        <button id="entry-btn" class="btn btn-primary">Adicionar</button>
+    </div>
+
+    <div class="row" id="cards-container"></div>
+</div>
+
+<script>
+const tarefa_input = document.getElementById("t-input")
+const entry_btn = document.getElementById("entry-btn")
+const container = document.getElementById("cards-container")
+
+entry_btn.addEventListener("click", () => {
+
+    if (tarefa_input.value.trim() === "") return;
+
+    const col = document.createElement("div")
+    col.className = "col-md-4 mb-3"
+
+    const card = document.createElement("div")
+    card.className = "card p-3"
+
+    const titulo = document.createElement("h5")
+    titulo.innerText = tarefa_input.value
+
+    const btnAlta = document.createElement("button")
+    btnAlta.innerText = "Alta"
+    btnAlta.className = "btn btn-danger btn-sm me-1"
+
+    const btnMedia = document.createElement("button")
+    btnMedia.innerText = "Média"
+    btnMedia.className = "btn btn-warning btn-sm me-1"
+
+    const btnBaixa = document.createElement("button")
+    btnBaixa.innerText = "Baixa"
+    btnBaixa.className = "btn btn-success btn-sm"
+
+    btnAlta.onclick = () => card.style.backgroundColor = "#f8d7da"
+    btnMedia.onclick = () => card.style.backgroundColor = "#fff3cd"
+    btnBaixa.onclick = () => card.style.backgroundColor = "#d1e7dd"
+
+    const btnGroup = document.createElement("div")
+    btnGroup.className = "mt-2"
+
+    btnGroup.appendChild(btnAlta)
+    btnGroup.appendChild(btnMedia)
+    btnGroup.appendChild(btnBaixa)
+
+    card.appendChild(titulo)
+    card.appendChild(btnGroup)
+
+    col.appendChild(card)
+    container.appendChild(col)
+
+    tarefa_input.value = ""
+})
+</script>
+
+</body>
+</html>
