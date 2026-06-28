@@ -1,5 +1,0 @@
-Selecionam o elemento com base em seu estado.
-
-h1:hover -> seleciona o elemento no estado de cobrimento pelo mouse.
-
-h1:nth-child(odd) -> seleciona os itens ìmpares de cada nível.
